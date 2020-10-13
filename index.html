@@ -1,1 +1,112 @@
-<h1>Fuck off</h1>
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{box-sizing: inherit;}
+
+body{
+     padding: 0;
+     margin: 0 ;
+    
+}
+ .wrapper{
+     width:400px;
+     margin: 0 auto;
+      
+     background-color: black;
+     color: white;
+
+
+ }
+ .calc-buttons-row{
+     
+     display: flex;
+     flex-flow:row nowrap;
+     justify-content: space-between;
+     margin-bottom: 0.5%;
+    
+ }
+ .screen{
+     text-align: right;
+     padding: 20px 5px;
+     font-size: 40px;
+ }
+ .calc-button{
+     background-color: #d8d9db;
+     color:black;
+     font-size: 40px;
+     border: none  ; 
+     height:100px;
+      flex-basis:24.5%;
+      
+    
+ }
+ .calc-button:hover{
+     background-color: #ebebeb;
+ }
+ .calc-button:active{
+     background-color: #bbbcbe;
+     
+ }
+ .double{
+     flex-basis: 49.7%;
+ }
+ .triple{
+     flex-basis: 74.8%;
+ }
+ .calc-button:last-child{
+     background-color: #df974c;
+ }
+ .calc-button:last-child:active{
+     background-color: #df974c;
+ }
+ .calc-button:last-child:hover{
+     background-color: #dfb07e;
+ }
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>calculator</title>
+        <link rel="stylesheet" href="calculator.css">
+            
+    </head>
+        <body>
+            <div class="wrapper">
+                <section class="screen">
+                0
+                </section>
+            <section class="calc-buttons">
+             <div   class="calc-buttons-row">
+                <button class="calc-button double"> c </button>
+                <button class="calc-button"> &larr;</button>
+                <button class="calc-button">&divide;</button>
+
+             </div>
+             <div class="calc-buttons-row">
+                 <button class="calc-button">7</button>
+                 <button class="calc-button">8</button>
+                 <button class="calc-button">9</button>
+                 <button class="calc-button">&times;</button>
+            </div>
+            <div class="calc-buttons-row">
+                <button class="calc-button">4</button>
+                <button class="calc-button">5</button>
+                <button class="calc-button">6</button>
+                <button class="calc-button">&minus;</button>
+            </div>
+            <div class="calc-buttons-row">
+                <button class="calc-button">1</button>
+                <button class="calc-button">2</button>
+                <button class="calc-button">3</button>
+                <button class="calc-button">&plus;</button>
+            </div>
+            <div class="calc-buttons-row">
+                <button class="calc-button triple"> 0 </button>
+                <button class="calc-button">&equals;</button>
+            </div>
+
+
+
+            </section>
+            </div>
+        </body>
+    </html>
